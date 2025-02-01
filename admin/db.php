@@ -2,8 +2,8 @@
 
 $host = 'localhost';  
 $username = 'root';
-$password = 'root';
-$dbname = 'user_db';  
+$password = 'your_new_password';
+$dbname = 'shivsar';  
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
