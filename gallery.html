@@ -1,11 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
 </head>
-<body>
-    
-</body>
+
+<body class="bg-gray-100">
+    <!-- Top Header (Visible only on Desktop and Laptop screens) -->
+    <div class="bg-white border-b hidden lg:flex px-3 py-3">
+        <div class="container mx-auto px-4 flex items-center justify-between py-3 text-sm text-gray-600">
+            <!-- Logo -->
+            <div class="flex items-center space-x-4">
+                <img src="./shivsar_logo.jpg" alt="Logo" class="h-16 w-16">
+                <h1 class="text-xl font-bold text-gray-800">SHIVSAR-EXPORT</h1>
+            </div>
+            <!-- Contact Info -->
+            <div class="flex space-x-6">
+                <div class="flex items-center space-x-2">
+                    <i class="ri-phone-line text-orange-500 text-xl"></i>
+                    <span>Call Us: <br> <strong class="text-gray-800"> +91 7709442362</strong></span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="ri-mail-line text-orange-500 text-xl"></i>
+                    <span>Email Us: <br> <strong class="text-gray-800"> shivsarexport@gmail.com</strong></span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="ri-time-line text-orange-500 text-xl"></i>
+                    <span>Opening Hours: <br> <strong class="text-gray-800">Mon - Sat: 9am - 7pm</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-orange-500 text-white px-3 py-1">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+            <!-- Logo and Name (Visible only on mobile screens) -->
+            <div class="flex items-center space-x-4">
+                <h1 class="text-xl font-bold text-gray-800 md:hidden">SHIVSARE EXPORT</h1>
+            </div>
+
+            <!-- Menu (Visible on desktop and above, aligned to the left) -->
+            <div class="flex items-center space-x-8 desktop-menu hidden md:flex w-full justify-start">
+                <a href="http://localhost/shivsare-exports/" class="hover:text-gray-300">Home</a>
+                <a href="http://localhost/shivsare-exports/about.html" class="hover:text-gray-300">About Us</a>
+                <a href="http://localhost/shivsare-exports/gallery.html" class="hover:text-gray-300">Gallery</a>
+                <a href="http://localhost/shivsare-exports/contact.html" class="hover:text-gray-300">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Icon (Visible on small screens, aligned right) -->
+            <div class="mobile-menu relative md:hidden">
+                <i class="ri-menu-line text-2xl cursor-pointer" id="menuIcon"></i>
+            </div>
+
+            <!-- Social Media Icons (Visible on desktop and above) -->
+            <div class="flex items-center space-x-4 social-icons hidden md:flex">
+                <a href="#" class="hover:text-gray-300"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="ri-instagram-fill"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="ri-twitter-fill"></i></a>
+            </div>
+
+            <!-- Mobile Menu Content (hidden by default) -->
+            <div class="mobile-menu-content absolute top-16 right-4 bg-white p-4 rounded-lg shadow-lg hidden"
+                id="mobileMenuContent">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Profile</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gallery img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+
+    <body class="bg-gray-100">
+        <!-- Gallery Section -->
+        <section class="container mx-auto py-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Photo Gallery</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gallery px-8">
+                <!-- Gallery Image 1 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?nature" data-lightbox="gallery">
+                        <img src="./onions_imgs/img_1.jpeg" class="w-full h-60 object-cover" alt="Nature">
+                    </a>
+                </div>
+
+                <!-- Gallery Image 2 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?city" data-lightbox="gallery">
+                        <img src="./onions_imgs/img_2.jpeg" class="w-full h-60 object-cover" alt="City">
+                    </a>
+                </div>
+
+                <!-- Gallery Image 3 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?beach" data-lightbox="gallery">
+                        <img src="./onions_imgs/img_3.jpeg" class="w-full h-60 object-cover" alt="Beach">
+                    </a>
+                </div>
+
+                <!-- Gallery Image 4 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?mountain" data-lightbox="gallery">
+                        <img src="./onions_imgs/img_4.jpeg" class="w-full h-60 object-cover" alt="Mountain">
+                    </a>
+                </div>
+
+                <!-- Gallery Image 5 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?forest" data-lightbox="gallery">
+                        <img src="./onions_imgs/nashik-onion-1.jpeg" class="w-full h-60 object-cover" alt="Forest">
+                    </a>
+                </div>
+
+                <!-- Gallery Image 6 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?ocean" data-lightbox="gallery">
+                        <img src="./onions_imgs/red-onion.jpeg" class="w-full h-60 object-cover" alt="Ocean">
+                    </a>
+                </div>
+
+                <!-- Gallery Image 7 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?waterfall" data-lightbox="gallery">
+                        <img src="./onions_imgs/white_onion_1.jpeg" class="w-full h-60 object-cover" alt="Waterfall">
+                    </a>
+                </div>
+
+                <!-- Gallery Image 8 -->
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://source.unsplash.com/600x400/?sunset" data-lightbox="gallery">
+                        <img src="./onions_imgs/white_onion_2.jpeg" class="w-full h-60 object-cover" alt="Sunset">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- gallery section ends -->
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white py-6">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-16">
+                <!-- Logo and Main Office -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-orange-400">Main Office Address</h3>
+                    <p class="text-sm">S.H.7 CHANDWAD, LASALGAON ROAD CHANDWAD GAT NO.139 NEAR TULSAI LAWNS CHANDWAD.
+                    </p>
+                    <p class="text-sm mt-3">Mail: <a href="mailto:shivsarexport@gmail.com"
+                            class="text-orange-400 hover:underline">shivsarexport@gmail.com</a></p>
+                    <p class="text-sm">Phone: <a href="tel:+917709442362" class="text-orange-400 hover:underline">+91
+                            7709442362</a>
+                    </p>
+                </div>
+
+                <!-- Warehouse Address -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-orange-400">Warehouse Address</h3>
+                    <p class="text-sm">1.) S.H.7 CHANDWAD, LASALGAON ROAD CHANDWAD GAT NO. 139 NEAR TULSAI LAWNS
+                        CHANDWAD.</p>
+                    <p class="text-sm mt-2">2.) N.H.3 APMC CHANDWAD. GODAWON NO. 2 CHANDWAD NASHIK (423101)</p>
+                </div>
+
+                <!-- Useful Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-orange-400">Useful Links</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="#home" class="text-orange-400 hover:underline">Home</a></li>
+                        <li><a href="#aboutus" class="text-orange-400 hover:underline">About Us</a></li>
+                        <li><a href="#gallery" class="text-orange-400 hover:underline">Gallery</a></li>
+                        <li><a href="#contact" class="text-orange-400 hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-6 pt-4">
+                <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 md:px-16">
+                    <p class="text-sm">© 2021 SHIVSAR-EXPORT. All Rights Reserved. Designed by <a
+                            href="https://creantix.com" class="text-orange-400 hover:underline">creantix</a>.</p>
+
+                    <!-- Language Dropdown -->
+                    <div class="mt-4 md:mt-0 flex items-center">
+                        <span class="text-sm text-gray-400 mr-4">Language:</span>
+                        <div id="google_translate_element" class="inline-block"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Google Translate Script -->
+        <script type="text/javascript">
+            function initializeGoogleTranslateElement() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,ar,ms,si,bn,ne,th,my',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script>
+        <!-- Footer ends here  -->
+
+        <!-- script tag -->
+        <script>
+            const menuIcon = document.getElementById('menuIcon');
+            const mobileMenuContent = document.getElementById('mobileMenuContent');
+
+            menuIcon.addEventListener('click', () => {
+                mobileMenuContent.style.display =
+                    mobileMenuContent.style.display === 'block' ? 'none' : 'block';
+            });
+        </script>
+    </body>
+
 </html>
