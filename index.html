@@ -8,136 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .slider-container {
-      height: 100%;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .slider {
-      display: flex;
-      transition: transform 1s ease-in-out;
-    }
-
-    .slide {
-      min-width: 100%;
-      position: relative;
-    }
-
-    .slide img {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      filter: brightness(30%);
-    }
-
-    .slide-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      text-align: center;
-      padding: 1rem 2rem;
-      border-radius: 1rem;
-      font-size: 1.5rem;
-    }
-
-    .dots {
-      position: absolute;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      border-radius: 50%;
-      cursor: pointer;
-      opacity: 0.5;
-    }
-
-    .dot.active {
-      opacity: 1;
-    }
-
-    .sticky {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 50;
-    }
-    
-
-    @media (max-width: 768px) {
-      .social-icons {
-        display: none;
-      }
-
-      .desktop-menu {
-        display: none;
-      }
-
-      .mobile-menu {
-        display: block;
-      }
-
-      .mobile-menu-content {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: white;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-        animation: fadeIn 0.3s ease;
-      }
-
-      .mobile-menu-content a {
-        display: block;
-        margin: 0.5rem 0;
-        color: black;
-      }
-
-      .mobile-menu-content a:hover {
-        color: #fb923c;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    }
-
-    @media (min-width: 769px) {
-      .mobile-menu {
-        display: none;
-      }
-
-      .desktop-menu {
-        display: block;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gray-100">
@@ -146,10 +17,8 @@
     <div class="container mx-auto px-4 flex items-center justify-between py-3 text-sm text-gray-600">
       <!-- Logo -->
       <div class="flex items-center space-x-4">
-        <img
-          src="./shivsar_logo.jpg"
-          alt="Logo" class="h-16 w-16">
-        <h1 class="text-xl font-bold text-gray-800">SHIVSAR-EXPORTS</h1>
+        <img src="./shivsar_logo.jpg" alt="Logo" class="h-16 w-16">
+        <h1 class="text-xl font-bold text-gray-800">SHIVSAR-EXPORT</h1>
       </div>
       <!-- Contact Info -->
       <div class="flex space-x-6">
@@ -179,9 +48,9 @@
 
       <!-- Menu (Visible on desktop and above, aligned to the left) -->
       <div class="flex items-center space-x-8 desktop-menu hidden md:flex w-full justify-start">
-        <a href="/" class="hover:text-gray-300">Home</a>
-        <a href="/about.html" class="hover:text-gray-300">About Us</a>
-        <a href="/gallery.html" class="hover:text-gray-300">Gallery</a>
+        <a href="http://localhost/shivsare-exports/" class="hover:text-gray-300">Home</a>
+        <a href="http://localhost/shivsare-exports/about.html" class="hover:text-gray-300">About Us</a>
+        <a href="http://localhost/shivsare-exports/gallery.html" class="hover:text-gray-300">Gallery</a>
         <a href="http://localhost/shivsare-exports/contact.html" class="hover:text-gray-300">Contact Us</a>
       </div>
 
@@ -236,7 +105,8 @@
           alt="Third Slide">
         <div class="slide-text absolute top-20 left-1/2 transform -translate-x-1/2">
           <span class="text-6xl font-bold tracking-wider ">24/7 Open </span><br>
-          <p class="text-xl tracking-tight mt-3">We believe in sustainable farming practices. Our goal is to grow high-quality onions.</p>
+          <p class="text-xl tracking-tight mt-3">We believe in sustainable farming practices. Our goal is to grow
+            high-quality onions.</p>
         </div>
       </div>
     </div>
@@ -252,7 +122,8 @@
     <!-- Left Image Section -->
     <div class="sm:w-1/2 p-10">
       <div class="image object-center text-center">
-        <img src="https://images.pexels.com/photos/16701914/pexels-photo-16701914/free-photo-of-abundance-of-red-onions.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="max-w-full rounded-sm h-auto">
+        <img src="https://th.bing.com/th/id/OIP.Ykp7r-jGemqd0Gp1HrdI8wHaHa?w=800&h=800&rs=1&pid=ImgDetMain"
+          class="max-w-full rounded-sm h-auto">
       </div>
     </div>
 
@@ -266,16 +137,24 @@
         </h2>
         <!-- Paragraph -->
         <p class="text-gray-700 text-left tracking-wider leading-relaxed">
-          <span class="font-semibold">SHIVSAR EXPORT</span> is an India-based commodity trading company with offices in Nashik, India. We are tied up with major brands and have had a presence in the Indian market for the last 24 years. As of 2024, we have started exporting agricultural products worldwide.
+          <span class="font-semibold">SHIVSAR EXPORT</span> is an India-based commodity trading company with offices in
+          Nashik, India. We are tied up with major brands and have had a presence in the Indian market for the last 24
+          years. As of 2024, we have started exporting agricultural products worldwide.
         </p>
         <p class="text-gray-700 text-left tracking-wider leading-relaxed">
-          We have direct supplier relationships with farmers and factories in India, enabling us to supply products at the most competitive prices. Our company operates from major ports in India, including JNPT Mumbai, Mundra, Chennai, Tuticorin, and all major airports.
+          We have direct supplier relationships with farmers and factories in India, enabling us to supply products at
+          the most competitive prices. Our company operates from major ports in India, including JNPT Mumbai, Mundra,
+          Chennai, Tuticorin, and all major airports.
         </p>
         <p class="text-gray-700 text-left tracking-wider leading-relaxed">
-          SHIVSAR EXPORT ensures top-quality products, timely delivery, and customer satisfaction. We aim to be the preferred destination for agro-product buyers. Our company enjoys an outstanding reputation due to the dedication of our employees and the excellence of our products and services.
+          SHIVSAR EXPORT ensures top-quality products, timely delivery, and customer satisfaction. We aim to be the
+          preferred destination for agro-product buyers. Our company enjoys an outstanding reputation due to the
+          dedication of our employees and the excellence of our products and services.
         </p>
         <p class="text-gray-700 text-left tracking-wider leading-relaxed">
-          All our products meet industry standards and are securely packed per client specifications. Our team’s professional approach enables us to operate smoothly and efficiently. The primary products we supply, export, and trade include:
+          All our products meet industry standards and are securely packed per client specifications. Our team’s
+          professional approach enables us to operate smoothly and efficiently. The primary products we supply, export,
+          and trade include:
         </p>
         <p class="font-semibold text-gray-700 text-left tracking-wider leading-relaxed">
           Red Onion, Pink Onion, White Onion, Nashik Onion, Garwa Onion, Summer Onion, Fresh Onion, and Organic Onion.
@@ -285,7 +164,7 @@
   </div>
 
   <!-- why US section -->
-  <div class="py-12 bg-gray-50 " >
+  <div class="py-12 bg-gray-50 ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="px-2 mb-12">
         <h2 class="text-4xl font-extrabold text-black  " id="why-us-section">Why Us?</h2>
@@ -301,7 +180,8 @@
           <i class="ri-award-line text-orange-500 text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold text-gray-900">QUALITY</h3>
           <p class="mt-2 text-gray-600">
-            We run with quality. We are totally committed to meet and exceed the expectations of our clients by providing them with the finest quality products and services.
+            We run with quality. We are totally committed to meet and exceed the expectations of our clients by
+            providing them with the finest quality products and services.
           </p>
         </div>
 
@@ -310,7 +190,8 @@
           <i class="ri-archive-line text-orange-500 text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold text-gray-900">PACKAGING</h3>
           <p class="mt-2 text-gray-600">
-            We use high quality material and ensure precision weighing and fast packaging of product into bags of different sizes.
+            We use high quality material and ensure precision weighing and fast packaging of product into bags of
+            different sizes.
           </p>
         </div>
 
@@ -319,7 +200,8 @@
           <i class="ri-service-line text-orange-500 text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold text-gray-900">SERVICE EXCELLENCE</h3>
           <p class="mt-2 text-gray-600">
-            We provide customized packaging according to clients requirement. We offer highly personalised services to our clients.
+            We provide customized packaging according to clients requirement. We offer highly personalised services to
+            our clients.
           </p>
         </div>
 
@@ -328,7 +210,8 @@
           <i class="ri-user-settings-line text-orange-500 text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold text-gray-900">PERSONALIZED SERVICE</h3>
           <p class="mt-2 text-gray-600">
-            Building an organizational culture based on service and operational excellence in plan and in execution. We ensure delivery of product in stipulated time frame.
+            Building an organizational culture based on service and operational excellence in plan and in execution. We
+            ensure delivery of product in stipulated time frame.
           </p>
         </div>
 
@@ -337,7 +220,9 @@
           <i class="ri-team-line text-orange-500 text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold text-gray-900">SKILLED LABOUR</h3>
           <p class="mt-2 text-gray-600">
-            We have a skilled and experienced labour team available for packaging and processing so that it helps to sort products as per the grades, size, shape, colour, and volume to maintain national and international standards.
+            We have a skilled and experienced labour team available for packaging and processing so that it helps to
+            sort products as per the grades, size, shape, colour, and volume to maintain national and international
+            standards.
           </p>
         </div>
 
@@ -346,109 +231,110 @@
           <i class="ri-price-tag-3-line text-orange-500 text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold text-gray-900">COMPETITIVE PRICE</h3>
           <p class="mt-2 text-gray-600">
-            Four decades plus experience in this ﬁeld. We have a good grasp on market scenarios in terms of price, availability and supply. This ensures a price advantage to the customer.
+            Four decades plus experience in this ﬁeld. We have a good grasp on market scenarios in terms of price,
+            availability and supply. This ensures a price advantage to the customer.
           </p>
         </div>
       </div>
     </div>
   </div>
   <!-- why us section ends here  -->
-  
 
   <!-- leading supplier section -->
   <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-     <!-- Text Content -->
-    <div class="text-center lg:text-left space-y-6 max-w-3xl">
-      <h1 class="text-4xl lg:text-5xl font-bold text-black leading-tight">
-        A Leading Onion Supplier <br class="hidden lg:block"> Serving Since 1972.
-      </h1>
-      <p class="text-lg text-black">
-        𝐒𝐇𝐈𝐕𝐒𝐀𝐑 𝐄𝐗𝐏𝐎𝐑𝐓 CHANDWAD NASHIK in Maharashtra India is one of the leading Onion exporter, Supplier and wholesaler. We supply best quality red ,pink and white onion packed in mesh or jute bags with size ranging from 20mm TO 70mm all over the year. We do fob, cif, c&f to all major ports in India and various countries
-      </p>
-      <p class="text-black text-lg">
-        Our company is poised to cater to the world market with the best that is available from nature's lap. The founding policy of our company is to deliver world-class products to our customers.
-      </p>
-    </div>
+      <!-- Text Content -->
+      <div class="text-center lg:text-left space-y-6 max-w-3xl">
+        <h1 class="text-4xl lg:text-5xl font-bold text-black leading-tight">
+          A Leading Onion Supplier <br class="hidden lg:block"> Serving Since 2001.
+        </h1>
+        <p class="text-lg text-black">
+          𝐒𝐇𝐈𝐕𝐒𝐀𝐑 𝐄𝐗𝐏𝐎𝐑𝐓 CHANDWAD NASHIK in Maharashtra India is one of the leading Onion exporter,
+          Supplier and wholesaler. We supply best quality red ,pink and white onion packed in mesh or jute bags with
+          size ranging from 20mm TO 70mm all over the year. We do fob, cif, c&f to all major ports in India and various
+          countries
+        </p>
+        <p class="text-black text-lg">
+          Our company is poised to cater to the world market with the best that is available from nature's lap. The
+          founding policy of our company is to deliver world-class products to our customers.
+        </p>
+      </div>
 
-  
       <!-- Image Content -->
       <div class="relative flex justify-center lg:justify-end">
-        <img src="shivsar_logo.jpg" alt="RGH Global" class="w-96 lg:w-[450px] rounded-xl shadow-xl hover:scale-105 transition-transform duration-300" />
+        <img src="shivsar_logo.jpg" alt="RGH Global"
+          class="w-96 lg:w-[450px] rounded-xl shadow-xl hover:scale-105 transition-transform duration-300" />
       </div>
     </div>
-  
-  </section>  
+
+  </section>
   <!-- leading suppliers ends here  -->
 
   <!-- What We Offer Section -->
   <div class="container mx-auto p-12">
-    <div class="text-center text-4xl font-bold text-black mb-8 leading-tight">What we <span class="text-orange-400">Offer</span> </div>
-    <p class="tracking-tight text-black text-center text-lg mb-8">We offer a comprehensive range of onion varieties such as Fresh Red Onion, Fresh White Onion, Nashik Onion, and more at cost-effective rates. Our products are grown with care and sourced from trusted suppliers to ensure consistent quality. We strive to provide the best onions that meet the expectations of our customers.</p>
+    <div class="text-center text-4xl font-bold text-black mb-8 leading-tight">What we <span
+        class="text-orange-400">Offer</span> </div>
+    <p class="tracking-tight text-black text-center text-lg mb-8">We offer a comprehensive range of onion varieties such
+      as Fresh Red Onion, Fresh White Onion, Pink/Garva Onion, and more at cost-effective rates. Our products are grown
+      with care and sourced from trusted suppliers to ensure consistent quality. We strive to provide the best onions
+      that meet the expectations of our customers.</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- First Card -->
       <div class="group relative block bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
-        <img
-          alt=""
-          src="./onions_imgs/white_onion_1.jpeg"
-          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-        />
-  
+        <img alt="" src="./onions_imgs/white_onion_1.jpeg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
         <div class="relative p-6">
-          <p class="text-sm font-medium uppercase tracking-widest text-pink-500">SHIVSAR EXPORTS ONIONS</p>
+          <p class="text-sm font-medium uppercase tracking-widest text-black">SHIVSAR EXPORT ONIONS</p>
           <p class="text-xl font-bold text-white sm:text-2xl">WHITE ONION</p>
-  
+
           <div class="mt-12 sm:mt-16 lg:mt-24">
-            <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <p class="text-sm text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis hic asperiores
-                quibusdam quidem voluptates.
+                The white onions we offer are mild and sweet, ideal for salads, sandwiches, and garnishing dishes.
               </p>
             </div>
           </div>
         </div>
       </div>
-  
+
       <!-- Second Card -->
       <div class="group relative block bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
-        <img
-          alt="Second Image"
-          src="https://www.innovativehomecare.com/wp-content/uploads/2020/09/benefits-of-onions-1536x1239.jpg"
-          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-        />
-  
+        <img alt="Second Image" src="./onions_imgs/red-onion.jpeg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
         <div class="relative p-6">
-          <p class="text-sm font-medium uppercase tracking-widest text-pink-500">SHIVSAR EXPORTS ONIONS</p>
+          <p class="text-sm font-medium uppercase tracking-widest text-white">SHIVSAR EXPORT ONIONS</p>
           <p class="text-xl font-bold text-white sm:text-2xl">RED ONIONS</p>
-  
+
           <div class="mt-12 sm:mt-16 lg:mt-24">
-            <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <p class="text-sm text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis hic asperiores
-                quibusdam quidem voluptates.
+                Our fresh red onions are known for their rich color, crisp texture, and unique flavor profile, perfect
+                for various culinary uses.
               </p>
             </div>
           </div>
         </div>
       </div>
-  
+
       <!-- Third Card -->
       <div class="group relative block bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
-        <img
-          alt="Third Image"
-          src="https://th.bing.com/th/id/OIP.7D6llNfyQwmiClaVKxBzSAHaJ4?rs=1&pid=ImgDetMain"
-          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-        />
-  
+        <img alt="Third Image" src="./onions_imgs/nashik-onion-1.jpeg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
         <div class="relative p-6">
-          <p class="text-sm font-medium uppercase tracking-widest text-pink-500">SHIVSAR EXPORTS ONIONS</p>
-          <p class="text-xl font-bold text-white sm:text-2xl">NASHIK ONIONS</p>
-  
+          <p class="text-sm font-medium uppercase tracking-widest text-white">SHIVSAR EXPORT ONIONS</p>
+          <p class="text-xl font-bold text-white sm:text-2xl">PINK/GARVA ONIONS</p>
+
           <div class="mt-12 sm:mt-16 lg:mt-24">
-            <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <p class="text-sm text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis hic asperiores
-                quibusdam quidem voluptates.
+                Known for their robust flavor, Pink onions are good for long-term use and are available in bulk for
+                various businesses.
               </p>
             </div>
           </div>
@@ -456,184 +342,128 @@
       </div>
     </div>
   </div>
-
-
-  <!-- Location Section -->
-<section class="bg-white py-16 px-6">
-  <div class="container mx-auto px-6">
-    <!-- Section Header -->
-    <div class="text-center">
-      <h2 class="text-4xl font-bold text-orange-500 uppercase mb-4">Our Location</h2>
-      <p class="text-gray-600 text-lg">
-        Visit us at our office or locate us easily on the map below for all your trading inquiries.
-      </p>
-    </div>
-
-    <!-- Map and Address -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 items-center">
-      <!-- Map -->
-      <div class="overflow-hidden rounded-xl shadow-lg">
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7854.586121519564!2d74.2361591!3d20.329692159049387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc2b57d6335a01%3A0xbca84f8de2d2c20d!2z4KSV4KWD4KS34KWAIOCkieCkpOCljeCkquCkqOCljeCkqCDgpKzgpL7gpJzgpL7gpLAg4KS44KSu4KS_4KSk4KS_IOCkmuCkvuCkgeCkpuCkteCkoQ!5e0!3m2!1smr!2sin!4v1737785030959!5m2!1smr!2sin"
-  width="600" 
-  height="450" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-      </div>
-
-      <!-- Address -->
-      <div>
-        <h3 class="text-3xl font-semibold text-gray-800">Visit Us</h3>
-        <p class="text-gray-600 mt-4 px-2 text-lg leading-relaxed">
-          कृषी उत्पन्न बाजार समिती, चांदवड <br>
-          Market Yard, Kanda-khala No. 2 <br>
-          Taluka-Chandwad, Tahsil-Chandwad <br>
-          Dist-Nashik, 423101 <br>
-          Maharashtra, India
-        </p>
-        <p class="text-gray-600 mt-6">
-          <strong>Email:</strong>
-          <a href="mailto:shivsarexport@gmail.com" class="text-orange-500 hover:underline">
-            shivsarexport@gmail.com
-          </a>
-        </p>
-        <p class="text-gray-600 mt-4">
-          <strong>Phone:</strong>
-          <a href="tel:+917709442362" class="text-orange-500 hover:underline">
-            +91 7709442362
-          </a>
-        </p>
-        <a
-          href="https://www.google.com/maps/place/%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%80+%E0%A4%89%E0%A4%A4%E0%A5%8D%E0%A4%AA%E0%A4%A8%E0%A5%8D%E0%A4%A8+%E0%A4%AC%E0%A4%BE%E0%A4%9C%E0%A4%BE%E0%A4%B0+%E0%A4%B8%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A5%80+%E0%A4%9A%E0%A4%BE%E0%A4%81%E0%A4%A6%E0%A4%B5%E0%A4%A1/@18.5514,73.8219,16z/data=!4m6!3m5!1s0x3bdc2b57d6335a01:0xbca84f8de2d2c20d!8m2!3d20.3298087!4d74.2361591!16s%2Fg%2F11g3j5b_h2?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
-          target="_blank"
-          class="inline-block mt-6 bg-orange-500 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-orange-600 transition">
-          Get Directions
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-  
-
 
   <!-- countries -->
   <section class="py-16 px-4">
     <div class="container mx-auto max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-        <!-- Left Div: Countries List -->
-        <div class="p-8 md:p-12 flex-1">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Countries We Export To
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Bahrain</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Malaysia</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Mauritius</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Qatar</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Saudi Arabia</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Singapore</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Sri Lanka</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Thailand</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">United Kingdom</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
-                    <p class="text-gray-700">Vietnam</p>
-                </div>
-            </div>
-        </div>
+      <!-- Left Div: Countries List -->
+      <div class="p-8 md:p-12 flex-1">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          Countries We Export To
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">NEPAL </p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Malaysia</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">BANGLADESH </p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Qatar</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Saudi Arabia</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Singapore</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Sri Lanka</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">United Kingdom</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Vietnam</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">INDONESIA</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Kuwait</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">UNITED ARAB EMIRATES (UAE)</p>
+          </div>
 
-        <!-- Right Div: Image -->
-        <div class="flex-1">
-            <img 
-                src="https://maproom.net/wp-content/uploads/Maproom-World-Map-3.png" 
-                alt="Export Countries Image" 
-                class="w-full h-full object-cover"
-            />
         </div>
+      </div>
+
+      <!-- Right Div: Image -->
+      <div class="flex-1">
+        <img src="https://maproom.net/wp-content/uploads/Maproom-World-Map-3.png" alt="Export Countries Image"
+          class="w-full h-full object-cover" />
+      </div>
     </div>
-</section>
-
+  </section>
   <!-- countries end  -->
-  
+
   <!-- Footer Section -->
   <footer class="bg-gray-800 text-white py-6">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-16">
-        <!-- Logo and Main Office -->
-        <div>
-            <h3 class="text-lg font-semibold mb-4 text-orange-400">Main Office Address</h3>
-            <p class="text-sm">SHIVSAR EXPORT, India - 422008</p>
-            <p class="text-sm mt-3">Mail: <a href="mailto: shivsarexport@gmail.com" class="text-orange-400 hover:underline"> shivsarexport@gmail.com</a></p>
-            <p class="text-sm">Phone: <a href="tel:+917709442362" class="text-orange-400 hover:underline">+91 7709442362</a></p>
-        </div>
+      <!-- Logo and Main Office -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-orange-400">Main Office Address</h3>
+        <p class="text-sm">S.H.7 CHANDWAD, LASALGAON ROAD CHANDWAD GAT NO.139 NEAR TULSAI LAWNS CHANDWAD.</p>
+        <p class="text-sm mt-3">Mail: <a href="mailto:shivsarexport@gmail.com"
+            class="text-orange-400 hover:underline">shivsarexport@gmail.com</a></p>
+        <p class="text-sm">Phone: <a href="tel:+917709442362" class="text-orange-400 hover:underline">+91 7709442362</a>
+        </p>
+      </div>
 
-        <!-- Warehouse Address -->
-        <div>
-            <h3 class="text-lg font-semibold mb-4 text-orange-400">Warehouse Address</h3>
-            <p class="text-sm">SHIVSAR EXPORT, India - 422008</p>
-            <p class="text-sm mt-3">Mail: <a href="mailto: shivsarexport@gmail.com" class="text-orange-400 hover:underline"> shivsarexport@gmail.com</a></p>
-            <p class="text-sm">Phone: <a href="tel:+917709442362" class="text-orange-400 hover:underline">+91 7709442362</a></p>
-        </div>
+      <!-- Warehouse Address -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-orange-400">Warehouse Address</h3>
+        <p class="text-sm">1.) S.H.7 CHANDWAD, LASALGAON ROAD CHANDWAD GAT NO. 139 NEAR TULSAI LAWNS CHANDWAD.</p>
+        <p class="text-sm mt-2">2.) N.H.3 APMC CHANDWAD. GODAWON NO. 2 CHANDWAD NASHIK (423101)</p>
+      </div>
 
-        <!-- Nashik Office Address -->
-        <div>
-            <h3 class="text-lg font-semibold mb-4 text-orange-400">Nashik Office Address</h3>
-            <p class="text-sm">SHIVSAR EXPORT, India - 422008</p>
-            <p class="text-sm mt-3">Mail: <a href="mailto: shivsarexport@gmail.com" class="text-orange-400 hover:underline"> shivsarexport@gmail.com</a></p>
-            <p class="text-sm">Phone: <a href="tel:+917709442362" class="text-orange-400 hover:underline">+91 7709442362</a></p>
-        </div>
+      <!-- Useful Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-orange-400">Useful Links</h3>
+        <ul class="text-sm space-y-2">
+          <li><a href="#home" class="text-orange-400 hover:underline">Home</a></li>
+          <li><a href="#aboutus" class="text-orange-400 hover:underline">About Us</a></li>
+          <li><a href="#gallery" class="text-orange-400 hover:underline">Gallery</a></li>
+          <li><a href="#contact" class="text-orange-400 hover:underline">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    
+
     <div class="border-t border-gray-700 mt-6 pt-4">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 md:px-16">
-            <p class="text-sm">© 2021 SHIVSAR-EXPORT. All Rights Reserved. Designed by <a href="https://creantix.com" class="text-orange-400 hover:underline">creantix</a>.</p>
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 md:px-16">
+        <p class="text-sm">© 2021 SHIVSAR-EXPORT. All Rights Reserved. Designed by <a href="https://creantix.com"
+            class="text-orange-400 hover:underline">creantix</a>.</p>
 
-            <!-- Language Dropdown -->
-            <div class="mt-4 md:mt-0 flex items-center">
-                <span class="text-sm text-gray-400 mr-4">Language:</span>
-                <div id="google_translate_element" class="inline-block"></div>
-            </div>
+        <!-- Language Dropdown -->
+        <div class="mt-4 md:mt-0 flex items-center">
+          <span class="text-sm text-gray-400 mr-4">Language:</span>
+          <div id="google_translate_element" class="inline-block"></div>
         </div>
+      </div>
     </div>
-</footer>
-
-<!-- Google Translate Script -->
-<script type="text/javascript">
-  function initializeGoogleTranslateElement() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'en,ar,ms,si,bn,ne,th,my',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, 'google_translate_element');
-  }
-</script>
-<script type="text/javascript"
-  src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script>
-
+  </footer>
+  
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+    function initializeGoogleTranslateElement() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,ar,ms,si,bn,ne,th,my',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script>
   <!-- Footer ends here  -->
+
   <!-- Script Tag -->
   <script src="script.js"></script>
   <script>
-
     const whyUsButton = document.getElementById('whyUsButton');
     const whyUsSection = document.getElementById('why-us-section');
 
