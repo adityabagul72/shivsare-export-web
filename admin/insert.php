@@ -13,14 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $sql = "INSERT INTO `messages` (firstname, lastname, email, message) 
             VALUES ('$firstname', '$lastname', '$email', '$message')";
 
-    // Execute the query
     if ($conn->query($sql) === TRUE) {
-        echo "Message sent successfully!";
-    } else {
-        echo "Error: " . $conn->error;
+        $_SESSION['message_sent'] = true; // Set session flag
     }
 
-    // Close the connection
     $conn->close();
+    // Redirect back to contact.html
+    header("Location: ../contact.html");
+    exit();
 }
 ?>
