@@ -25,6 +25,9 @@ This project is the official website for **Shivsar Export** — built to present
 - **MySQL** – Storing user messages from the contact form  
 - **XAMPP** – Local development server for PHP and MySQL
 
+<img width="959" height="418" alt="image" src="https://github.com/user-attachments/assets/8fc7dfa7-8968-486c-9814-aa394067f310" />
+
+
 
 
 
