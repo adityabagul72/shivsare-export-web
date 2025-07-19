@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivsar exports</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+  <!-- Top Header (Visible only on Desktop and Laptop screens) -->
+  <div class="bg-white border-b hidden lg:flex px-3 py-3">
+    <div class="container mx-auto px-4 flex items-center justify-between py-3 text-sm text-gray-600">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="./shivsar_logo1.jpg" alt="Logo" class="h-16 w-16">
+        <h1 class="text-xl font-bold text-gray-800">SHIVSAR-EXPORT</h1>
+      </div>
+      <!-- Contact Info -->
+      <div class="flex space-x-6">
+        <div class="flex items-center space-x-2">
+          <i class="ri-phone-line text-orange-500 text-xl"></i>
+          <span>Call Us: <br> <strong class="text-gray-800"> +91 7709442362</strong></span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="ri-mail-line text-orange-500 text-xl"></i>
+          <span>Email Us: <br> <strong class="text-gray-800"> shivsarexport@gmail.com</strong></span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="ri-time-line text-orange-500 text-xl"></i>
+          <span>Opening Hours: <br> <strong class="text-gray-800">Mon - Sat: 9am - 7pm</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="bg-orange-500 text-white px-3 py-1">
+    <div class="container mx-auto px-4 flex justify-between items-center py-4">
+      <!-- Logo and Name (Visible only on mobile screens) -->
+      <div class="flex items-center space-x-4">
+        <h1 class="text-xl font-bold text-gray-800 md:hidden">SHIVSAR EXPORT</h1>
+      </div>
+
+      <!-- Menu (Visible on desktop and above, aligned to the left) -->
+      <div class="flex items-center space-x-8 desktop-menu hidden md:flex w-full justify-start">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="about.html" class="hover:text-gray-300">About Us</a>
+        <a href="gallery.html" class="hover:text-gray-300">Gallery</a>
+        <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+      </div>
+
+      <!-- Mobile Menu Icon (Visible on small screens, aligned right) -->
+      <div class="mobile-menu relative md:hidden">
+        <i class="ri-menu-line text-2xl cursor-pointer" id="menuIcon"></i>
+      </div>
+
+      <!-- Social Media Icons (Visible on desktop and above) -->
+      <div class="flex items-center space-x-4 social-icons hidden md:flex">
+        <a href="https://www.instagram.com/shivsarexport1064/" class="hover:text-gray-300"><i
+            class="ri-instagram-fill"></i></a>
+      </div>
+
+      <!-- Mobile Menu Content (hidden by default) -->
+      <div class="mobile-menu-content absolute top-16 right-4 bg-white p-4 rounded-lg shadow-lg hidden"
+        id="mobileMenuContent">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Image Slider -->
+  <div class="slider-container w-full">
+    <div class="slider" id="slider">
+      <div class="slide ">
+        <img src="./onions_imgs/slide_1.jpg" alt="First Slide">
+        <div class="slide-text absolute top-20 left-1/2 transform -translate-x-1/2">
+          <span class="text-6xl font-bold tracking-wider">Fresh Onion Harvest</span><br>
+          <p class="text-xl tracking-tight mt-3">Our onions are handpicked and sourced directly from the farms to ensure
+            the best quality and taste.</p>
+          <button id="whyUsButton" class="bg-orange-500 px-14 py-4 mt-3 text-sm">WHY US?</button>
+        </div>
+      </div>
+
+      <div class="slide ">
+        <img src="./onions_imgs/slide_2.jpg" alt="Second Slide">
+        <div class="slide-text absolute top-20 left-1/2 transform -translate-x-1/2">
+          <span class="text-6xl font-bold tracking-wider">Who We Are</span><br>
+          <p class="text-xl tracking-tight mt-3">We are passionate about providing most flavorful onions.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="./onions_imgs/slide_3.jpg" alt="Third Slide">
+        <div class="slide-text absolute top-20 left-1/2 transform -translate-x-1/2">
+          <span class="text-6xl font-bold tracking-wider ">24/7 Open </span><br>
+          <p class="text-xl tracking-tight mt-3">We believe in sustainable farming practices. Our goal is to grow
+            high-quality onions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="dots" id="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+
+  <!-- AboutUs Section -->
+  <div class="sm:flex items-center max-w-screen-xl mx-auto">
+    <!-- Left Image Section -->
+    <div class="sm:w-1/2 p-10">
+      <div class="image object-center text-center">
+        <img src="./shivsar_logo1.jpg" class="max-w-full rounded-sm h-auto">
+      </div>
+    </div>
+
+    <!-- Right Content Section -->
+    <div class="sm:w-1/2 p-5">
+      <div class="text">
+        <!-- Heading -->
+        <span class="text-orange-500 border-b-2 uppercase text-lg">About us</span>
+        <h2 class="my-4 font-bold text-3xl sm:text-4xl">
+          About <span class="text-orange-500">Our Company</span>
+        </h2>
+        <!-- Paragraph -->
+        <p class="text-gray-700 text-left tracking-wider leading-relaxed">
+          <span class="font-semibold">SHIVSAR EXPORT</span> is an India-based commodity trading company with offices in
+          Nashik, India. We are tied up with major brands and have had a presence in the Indian market for the last 24
+          years. As of 2024, we have started exporting agricultural products worldwide.
+        </p>
+        <p class="text-gray-700 text-left tracking-wider leading-relaxed">
+          We have direct supplier relationships with farmers and factories in India, enabling us to supply products at
+          the most competitive prices. Our company operates from major ports in India, including JNPT Mumbai, Mundra,
+          Chennai, Tuticorin, and all major airports.
+        </p>
+        <p class="text-gray-700 text-left tracking-wider leading-relaxed">
+          SHIVSAR EXPORT ensures top-quality products, timely delivery, and customer satisfaction. We aim to be the
+          preferred destination for agro-product buyers. Our company enjoys an outstanding reputation due to the
+          dedication of our employees and the excellence of our products and services.
+        </p>
+        <p class="text-gray-700 text-left tracking-wider leading-relaxed">
+          All our products meet industry standards and are securely packed per client specifications. Our team’s
+          professional approach enables us to operate smoothly and efficiently. The primary products we supply, export,
+          and trade include:
+        </p>
+        <p class="font-semibold text-gray-700 text-left tracking-wider leading-relaxed">
+          Red Onion, Pink Onion, White Onion, Nashik Onion, Garwa Onion, Summer Onion, Fresh Onion, and Organic Onion.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- why US section -->
+  <div class="py-12 bg-gray-50 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="px-2 mb-12">
+        <h2 class="text-4xl font-extrabold text-black  " id="why-us-section">Why Us?</h2>
+        <p class="mt-4 font-normal text-2xl text-black">
+          We are focused on meeting our customers' requirements, <br>
+          Some of the factors that make us preferable are:
+        </p>
+      </div>
+
+      <div class="p-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Quality -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="ri-award-line text-orange-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-900">QUALITY</h3>
+          <p class="mt-2 text-gray-600">
+            We run with quality. We are totally committed to meet and exceed the expectations of our clients by
+            providing them with the finest quality products and services.
+          </p>
+        </div>
+
+        <!-- Packaging -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="ri-archive-line text-orange-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-900">PACKAGING</h3>
+          <p class="mt-2 text-gray-600">
+            We use high quality material and ensure precision weighing and fast packaging of product into bags of
+            different sizes.
+          </p>
+        </div>
+
+        <!-- Service Excellence -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="ri-service-line text-orange-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-900">SERVICE EXCELLENCE</h3>
+          <p class="mt-2 text-gray-600">
+            We provide customized packaging according to clients requirement. We offer highly personalised services to
+            our clients.
+          </p>
+        </div>
+
+        <!-- Personalized Service -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="ri-user-settings-line text-orange-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-900">PERSONALIZED SERVICE</h3>
+          <p class="mt-2 text-gray-600">
+            Building an organizational culture based on service and operational excellence in plan and in execution. We
+            ensure delivery of product in stipulated time frame.
+          </p>
+        </div>
+
+        <!-- Skilled Labour -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="ri-team-line text-orange-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-900">SKILLED LABOUR</h3>
+          <p class="mt-2 text-gray-600">
+            We have a skilled and experienced labour team available for packaging and processing so that it helps to
+            sort products as per the grades, size, shape, colour, and volume to maintain national and international
+            standards.
+          </p>
+        </div>
+
+        <!-- Competitive Price -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="ri-price-tag-3-line text-orange-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-900">COMPETITIVE PRICE</h3>
+          <p class="mt-2 text-gray-600">
+            Four decades plus experience in this ﬁeld. We have a good grasp on market scenarios in terms of price,
+            availability and supply. This ensures a price advantage to the customer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- why us section ends here  -->
+
+  <!-- leading supplier section -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Text Content -->
+      <div class="text-center lg:text-left space-y-6 max-w-3xl">
+        <h1 class="text-4xl lg:text-5xl font-bold text-black leading-tight">
+          A Leading Onion Supplier <br class="hidden lg:block"> Serving Since 2001.
+        </h1>
+        <p class="text-lg text-black">
+          𝐒𝐇𝐈𝐕𝐒𝐀𝐑 𝐄𝐗𝐏𝐎𝐑𝐓 CHANDWAD NASHIK in Maharashtra India is one of the leading Onion exporter,
+          Supplier and wholesaler. We supply best quality red ,pink and white onion packed in mesh or jute bags with
+          size ranging from 20mm TO 70mm all over the year. We do fob, cif, c&f to all major ports in India and various
+          countries
+        </p>
+        <p class="text-black text-lg">
+          Our company is poised to cater to the world market with the best that is available from nature's lap. The
+          founding policy of our company is to deliver world-class products to our customers.
+        </p>
+      </div>
+
+      <!-- Image Content -->
+      <div class="relative flex justify-center lg:justify-end">
+        <img src="shivsar_logo1.jpg" alt="shivsar img"
+          class="w-96 lg:w-[450px] rounded-xl shadow-xl hover:scale-105 transition-transform duration-300" />
+      </div>
+    </div>
+
+  </section>
+  <!-- leading suppliers ends here  -->
+
+  <!-- What We Offer Section -->
+  <div class="container mx-auto p-12">
+    <div class="text-center text-4xl font-bold text-black mb-8 leading-tight">What we <span
+        class="text-orange-400">Offer</span> </div>
+    <p class="tracking-tight text-black text-center text-lg mb-8">We offer a comprehensive range of onion varieties such
+      as Fresh Red Onion, Fresh White Onion, Pink/Garva Onion, and more at cost-effective rates. Our products are grown
+      with care and sourced from trusted suppliers to ensure consistent quality. We strive to provide the best onions
+      that meet the expectations of our customers.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- First Card -->
+      <div class="group relative block bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
+        <img alt="" src="./onions_imgs/white_onion_1.jpeg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+        <div class="relative p-6">
+          <p class="text-sm font-medium uppercase tracking-widest text-black">SHIVSAR EXPORT ONIONS</p>
+          <p class="text-xl font-bold text-white sm:text-2xl">WHITE ONION</p>
+
+          <div class="mt-12 sm:mt-16 lg:mt-24">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+              <p class="text-sm text-white">
+                The white onions we offer are mild and sweet, ideal for salads, sandwiches, and garnishing dishes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="group relative block bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
+        <img alt="Second Image" src="./onions_imgs/red-onion.jpeg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+        <div class="relative p-6">
+          <p class="text-sm font-medium uppercase tracking-widest text-white">SHIVSAR EXPORT ONIONS</p>
+          <p class="text-xl font-bold text-white sm:text-2xl">RED ONIONS</p>
+
+          <div class="mt-12 sm:mt-16 lg:mt-24">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+              <p class="text-sm text-white">
+                Our fresh red onions are known for their rich color, crisp texture, and unique flavor profile, perfect
+                for various culinary uses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Card -->
+      <div class="group relative block bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
+        <img alt="Third Image" src="./onions_imgs/nashik-onion-1.jpeg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+        <div class="relative p-6">
+          <p class="text-sm font-medium uppercase tracking-widest text-white">SHIVSAR EXPORT ONIONS</p>
+          <p class="text-xl font-bold text-white sm:text-2xl">PINK/GARVA ONIONS</p>
+
+          <div class="mt-12 sm:mt-16 lg:mt-24">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+              <p class="text-sm text-white">
+                Known for their robust flavor, Pink onions are good for long-term use and are available in bulk for
+                various businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- countries -->
+  <section class="py-16 px-4">
+    <div class="container mx-auto max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+      <!-- Left Div: Countries List -->
+      <div class="p-8 md:p-12 flex-1">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          Countries We Export To
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">NEPAL </p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Malaysia</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">BANGLADESH </p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Qatar</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Saudi Arabia</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Singapore</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Sri Lanka</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">United Kingdom</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Vietnam</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">INDONESIA</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">Kuwait</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition duration-300">
+            <p class="text-gray-700">UNITED ARAB EMIRATES (UAE)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right Div: Image -->
+      <div class="flex-1">
+        <img src="https://maproom.net/wp-content/uploads/Maproom-World-Map-3.png" alt="Export Countries Image"
+          class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+  <!-- countries end  -->
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-16">
+      <!-- Logo and Main Office -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-orange-400">Main Office Address</h3>
+        <p class="text-sm">S.H.7 CHANDWAD, LASALGAON ROAD CHANDWAD GAT NO.139 NEAR TULSAI LAWNS CHANDWAD.</p>
+        <p class="text-sm mt-3">Mail: <a href="mailto:shivsarexport@gmail.com"
+            class="text-orange-400 hover:underline">shivsarexport@gmail.com</a></p>
+        <p class="text-sm">Phone: <a href="tel:+917709442362" class="text-orange-400 hover:underline">+91 7709442362</a>
+        </p>
+      </div>
+
+      <!-- Warehouse Address -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-orange-400">Warehouse Address</h3>
+        <p class="text-sm">1.) S.H.7 CHANDWAD, LASALGAON ROAD CHANDWAD GAT NO. 139 NEAR TULSAI LAWNS CHANDWAD.</p>
+        <p class="text-sm mt-2">2.) N.H.3 APMC CHANDWAD. GODAWON NO. 2 CHANDWAD NASHIK (423101)</p>
+      </div>
+
+      <!-- Useful Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-orange-400">Useful Links</h3>
+        <ul class="text-sm space-y-2">
+          <li><a href="index.html" class="text-orange-400 hover:underline">Home</a></li>
+          <li><a href="about.html" class="text-orange-400 hover:underline">About Us</a></li>
+          <li><a href="gallery.html" class="text-orange-400 hover:underline">Gallery</a></li>
+          <li><a href="contact.html" class="text-orange-400 hover:underline">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-6 pt-4">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 md:px-16">
+        <p class="text-sm">© 2025 SHIVSAR-EXPORT. All Rights Reserved. </p>
+
+        <!-- Language Dropdown -->
+        <div class="mt-4 md:mt-0 flex items-center">
+          <span class="text-sm text-gray-400 mr-4">Language:</span>
+          <div id="google_translate_element" class="inline-block"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+    function initializeGoogleTranslateElement() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,ar,ms,si,bn,ne,th,my',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script>
+  <!-- Footer ends here  -->
+
+  <!-- Script Tag -->
+  <script src="script.js"></script>
+  <script>
+    const whyUsButton = document.getElementById('whyUsButton');
+    const whyUsSection = document.getElementById('why-us-section');
+
+    whyUsButton.addEventListener('click', () => {
+      whyUsSection.classList.add('visible');
+      // Scroll to the Why Us section
+      whyUsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+    const slider = document.getElementById('slider');
+    const dots = document.getElementById('dots').children;
+    const navbar = document.getElementById('navbar');
+    const navbarOffset = navbar.offsetTop;
+    const menuIcon = document.getElementById('menuIcon');
+    const mobileMenuContent = document.getElementById('mobileMenuContent');
+    let currentIndex = 0;
+    menuIcon.addEventListener('click', () => {
+      mobileMenuContent.style.display =
+        mobileMenuContent.style.display === 'block' ? 'none' : 'block';
+    });
+    function showSlide(index) {
+      slider.style.transform = `translateX(-${index * 100}%)`;
+      Array.from(dots).forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % dots.length;
+      showSlide(currentIndex);
+    }
+    Array.from(dots).forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        showSlide(currentIndex);
+      });
+    });
+    setInterval(nextSlide, 5000);
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset >= navbarOffset) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    });
+  </script>
+</body>
+
+</html>
